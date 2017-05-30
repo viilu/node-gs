@@ -40,3 +40,8 @@ API
 * `input` - file
 * `executablePath` - path to the Ghostscript executable files (example: ghostscript/bin/./). This can be useful for Lambda functions.
 * `exec` - callback
+
+
+# License
+
+MIT - http://ncb000gt.mit-license.org/
