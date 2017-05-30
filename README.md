@@ -1,8 +1,11 @@
-gs
+node-gs
 =====
 
-NodeJS wrapper for `gs`
+NodeJS wrapper for `GhostScript` with the ability to set executable path.
 
+Installation
+=====
+`npm install https://github.com/sina-masnadi/node-gs/tarball/master`
 
 Usage
 =====
