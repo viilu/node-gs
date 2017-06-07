@@ -16,7 +16,7 @@ Usage
         .nopause()
         .option('-r' + 50 * 2)
         .option('-dDownScaleFactor=2')
-        .executablePath('ghostscript/bin/./')
+        .executablePath('ghostscript/bin/./gs')
         .device('png16m')
         .output('/tmp/' + fileName + '-%d.png')
         .input('/tmp/' + fileName)
