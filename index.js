@@ -76,7 +76,7 @@ function gs() {
             this.options.push('-dSAFER');
             return this;
         },
-        "exec":           function (cb) {
+        "exec":           function (cb, stdOutCallback) {
             var self = this;
             if (!this._input) return cb.call(self, 'No input specified');
 
@@ -96,6 +96,10 @@ function gs() {
             proc.stdout.on('data', function (data) {
                 totalBytes += data.length;
                 _data.push(data);
+
+                if (stdOutCallback) {
+                    stdOutCallback(data)
+                }
             });
             proc.on('close', function () {
                 var buf = Buffer.concat(_data, totalBytes);
